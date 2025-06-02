@@ -1,0 +1,17 @@
+{
+    "functions": {
+      "api/*.py": {
+        "runtime": "python3.9"
+      }
+    },
+    "env": {
+      "PYTHONPATH": ".",
+      "FLASK_ENV": "production"
+    },
+    "builds": [
+      {
+        "src": "api/**/*.py",
+        "use": "@vercel/python"
+      }
+    ]
+  }
