@@ -10,16 +10,6 @@
       "PYTHONPATH": ".",
       "FLASK_ENV": "production"
     },
-    "builds": [
-      {
-        "src": "api/**/*.py",
-        "use": "@vercel/python"
-      },
-      {
-        "src": "package.json",
-        "use": "@vercel/next"
-      }
-    ],
     "routes": [
       {
         "src": "/api/(.*)",
